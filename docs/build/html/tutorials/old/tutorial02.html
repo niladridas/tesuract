@@ -1,0 +1,547 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Some other usage cases &#8212; tesuract 0.2.0 documentation</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
+    <link rel="stylesheet" href="../../_static/style.css" type="text/css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link href="../../_static/style.css" rel="stylesheet" type="text/css">
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/tesuract_logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">tesuract 0.2.0 documentation</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Introduction
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../introduction.html">
+   Main features
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../install.html">
+   Installation
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  User Guide
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Polynomial_fitting.html">
+   Fitting with sklearn’s API
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Model_comparison.html">
+   Model comparison
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Hyperparameter_tuning.html">
+   Hyper-parameter tuning
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Feature_importances.html">
+   Feature Importances
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Tensor_surrogates.html">
+   Tensor or field surrogates
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  API
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../api.html">
+   PCE Base Class
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../api2.html">
+   PCE Regression Class
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+<a href="https://github.com/kennychowdhary/tesuract"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="bottom"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../../_sources/tutorials/old/tutorial02.rst.txt"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.rst</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#defining-custom-coefficient-array">
+   Defining custom coefficient array
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#custom-multiindex-array">
+   Custom multiindex array
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#custom-multiindex-and-coefficient-array">
+   Custom multiindex and coefficient array
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#using-normalized-legendre-basis">
+   Using normalized Legendre basis
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Some other usage cases</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#defining-custom-coefficient-array">
+   Defining custom coefficient array
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#custom-multiindex-array">
+   Custom multiindex array
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#custom-multiindex-and-coefficient-array">
+   Custom multiindex and coefficient array
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#using-normalized-legendre-basis">
+   Using normalized Legendre basis
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section id="some-other-usage-cases">
+<h1>Some other usage cases<a class="headerlink" href="#some-other-usage-cases" title="Permalink to this headline">#</a></h1>
+<p>In this tutorial, we will look at some uncommon usage cases for the pce
+regression classes. For example, we will look at how to construct a pce
+with a given coefficient array, using normalized Legendre bases, using
+different fit algorithms with custom fit parameters, etc. Again, let us
+import the relavant libraries.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="kn">import</span> <span class="nn">pypce</span>
+<span class="linenos">2</span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="linenos">3</span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">mpl</span>
+</pre></div>
+</div>
+<p>And let us create some sample data with and without noise this time,
+which will necessitate the use of a regularization method.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="n">rn</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">RandomState</span><span class="p">(</span><span class="mi">113</span><span class="p">)</span>
+<span class="linenos">2</span><span class="n">X</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">rn</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span>
+<span class="linenos">3</span><span class="n">y</span> <span class="o">=</span> <span class="n">X</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="mf">.5</span><span class="o">*</span><span class="p">(</span><span class="mi">3</span><span class="o">*</span><span class="n">X</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+<span class="linenos">4</span><span class="n">y_w_noise</span> <span class="o">=</span> <span class="n">y</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span> <span class="o">+</span> <span class="mf">.1</span><span class="o">*</span><span class="n">rn</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">y</span><span class="p">))</span>
+<span class="linenos">5</span><span class="nb">print</span><span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span><span class="n">y</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span><span class="n">y_w_noise</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="p">(</span><span class="mi">100</span><span class="p">,)</span> <span class="p">(</span><span class="mi">100</span><span class="p">,)</span>
+</pre></div>
+</div>
+<p>And let’s plot the input output univariate pairs with noise.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="p">[</span><span class="n">mpl</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">X</span><span class="p">[:,</span><span class="n">i</span><span class="p">],</span><span class="n">y_w_noise</span><span class="p">,</span><span class="s1">&#39;.&#39;</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">])]</span>
+</pre></div>
+</div>
+<section id="defining-custom-coefficient-array">
+<h2>Defining custom coefficient array<a class="headerlink" href="#defining-custom-coefficient-array" title="Permalink to this headline">#</a></h2>
+<p>First, suppose we already have a coefficient array we want to predict
+with. This is not common, but the pce regression class has that as an
+option. In this case you initial the pce object but have to make sure
+the coefficient array is the same size as the number of basis functions,
+which is equivalent to the number of rows of the multiindex array.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="n">pce_ref</span> <span class="o">=</span> <span class="n">pypce</span><span class="o">.</span><span class="n">PCEReg</span><span class="p">(</span><span class="n">order</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="linenos">2</span><span class="n">pce_ref</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">dim</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span> <span class="c1"># must run this to generate multiindex</span>
+<span class="linenos">3</span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;multiindex:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span><span class="n">pce_ref</span><span class="o">.</span><span class="n">mindex</span><span class="p">)</span>
+<span class="linenos">4</span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;number of basis elements: &quot;</span><span class="p">,</span> <span class="n">pce_ref</span><span class="o">.</span><span class="n">mindex</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">multiindex</span><span class="p">:</span>
+ <span class="p">[[</span><span class="mi">0</span> <span class="mi">0</span><span class="p">]</span>
+ <span class="p">[</span><span class="mi">1</span> <span class="mi">0</span><span class="p">]</span>
+ <span class="p">[</span><span class="mi">0</span> <span class="mi">1</span><span class="p">]</span>
+ <span class="p">[</span><span class="mi">2</span> <span class="mi">0</span><span class="p">]</span>
+ <span class="p">[</span><span class="mi">1</span> <span class="mi">1</span><span class="p">]</span>
+ <span class="p">[</span><span class="mi">0</span> <span class="mi">2</span><span class="p">]]</span>
+<span class="n">number</span> <span class="n">of</span> <span class="n">basis</span> <span class="n">elements</span><span class="p">:</span>  <span class="mi">6</span>
+</pre></div>
+</div>
+<p>Here, we said we wanted a second order polynomial and used the compile
+method from the PCEBuilder class to construct the multiindex. We were
+then able to print out the multiindex shape which, in this case, has 6
+basis elements. So we need a coefficient array of size 6.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="n">coef</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>
+<span class="linenos">2</span><span class="n">coef</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mf">1.0</span><span class="p">;</span> <span class="n">coef</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mf">1.0</span>
+</pre></div>
+</div>
+<p>Let us construct a new pce regression object with this coefficient
+array.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="n">pce</span> <span class="o">=</span> <span class="n">pypce</span><span class="o">.</span><span class="n">PCEReg</span><span class="p">(</span><span class="n">order</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">coef</span><span class="o">=</span><span class="n">coef</span><span class="p">)</span>
+<span class="linenos">2</span><span class="n">pce</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">dim</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="linenos">3</span><span class="n">pce</span><span class="o">.</span><span class="n">feature_importances</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">array</span><span class="p">([</span><span class="mf">0.625</span><span class="p">,</span> <span class="mf">0.375</span><span class="p">])</span>
+</pre></div>
+</div>
+<p>We can now make predictions with this polynomial object. We can bypass
+the fitting because we already know what the coefficient array is.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="n">ypred</span> <span class="o">=</span> <span class="n">pce</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+<span class="linenos">2</span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;prediction error = &quot;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">ypred</span><span class="o">-</span><span class="n">y</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>Note what happens if the coefficient array is the wrong size. The
+initialization is fine, but the predict method fails.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="n">pce</span> <span class="o">=</span> <span class="n">pypce</span><span class="o">.</span><span class="n">PCEReg</span><span class="p">(</span><span class="n">order</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">coef</span><span class="o">=</span><span class="n">coef</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+<span class="linenos">2</span><span class="n">pce</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="custom-multiindex-array">
+<h2>Custom multiindex array<a class="headerlink" href="#custom-multiindex-array" title="Permalink to this headline">#</a></h2>
+<p>We can also build a pce object with a custom multiindex array as well.
+Let’s use the multiindex of the reference pce above and modify it.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="n">custom_mindex</span> <span class="o">=</span> <span class="n">pce_ref</span><span class="o">.</span><span class="n">mindex</span><span class="p">[[</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">]]</span>
+<span class="linenos">2</span><span class="nb">print</span><span class="p">(</span><span class="n">custom_mindex</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[[</span><span class="mi">1</span> <span class="mi">0</span><span class="p">]</span>
+ <span class="p">[</span><span class="mi">0</span> <span class="mi">2</span><span class="p">]]</span>
+</pre></div>
+</div>
+<p>Here we just took the second and last row of the multiindex. Now let’s
+construct our pce with this.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="n">pce</span> <span class="o">=</span> <span class="n">pypce</span><span class="o">.</span><span class="n">PCEReg</span><span class="p">(</span><span class="n">customM</span><span class="o">=</span><span class="n">custom_mindex</span><span class="p">)</span>
+<span class="linenos">2</span><span class="n">pce</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">PCEReg</span><span class="p">(</span><span class="n">coef</span><span class="o">=</span><span class="n">array</span><span class="p">([</span><span class="mf">1.</span><span class="p">,</span> <span class="mf">1.</span><span class="p">]),</span> <span class="n">customM</span><span class="o">=</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
+       <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">]]),</span> <span class="n">order</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Note that the custom multiindex has to have the right dimensions. That
+is, the custom_mindex.shape[1] has to match the dimension of X,
+i.e. X.shape[1].</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="n">pce</span><span class="o">.</span><span class="n">feature_importances_</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">array</span><span class="p">([</span><span class="mf">0.625</span><span class="p">,</span> <span class="mf">0.375</span><span class="p">])</span>
+</pre></div>
+</div>
+</section>
+<section id="custom-multiindex-and-coefficient-array">
+<h2>Custom multiindex and coefficient array<a class="headerlink" href="#custom-multiindex-and-coefficient-array" title="Permalink to this headline">#</a></h2>
+<p>We can also feed it both a custom multiindex AND coefficient array.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="n">coef</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">1.0</span><span class="p">,</span><span class="mf">1.0</span><span class="p">])</span>
+<span class="linenos">2</span><span class="n">pce</span> <span class="o">=</span> <span class="n">pypce</span><span class="o">.</span><span class="n">PCEReg</span><span class="p">(</span><span class="n">customM</span><span class="o">=</span><span class="n">custom_mindex</span><span class="p">,</span><span class="n">coef</span><span class="o">=</span><span class="n">coef</span><span class="p">)</span>
+<span class="linenos">3</span><span class="n">ypred</span> <span class="o">=</span> <span class="n">pce</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+<span class="linenos">4</span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;error is &quot;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">ypred</span><span class="o">-</span><span class="n">y</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>Again, we can bypass the predict function since we already know the
+coefficient array.</p>
+</section>
+<section id="using-normalized-legendre-basis">
+<h2>Using normalized Legendre basis<a class="headerlink" href="#using-normalized-legendre-basis" title="Permalink to this headline">#</a></h2>
+<p>Another option is to use a normalized Legendre basis. The current method
+actually computes the normalization scalar, but in future versions, we
+will just use a normalized legendre function as input. Let’s see how it
+works anyway.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="n">pce</span> <span class="o">=</span> <span class="n">pypce</span><span class="o">.</span><span class="n">PCEReg</span><span class="p">(</span><span class="n">order</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">fit_type</span><span class="o">=</span><span class="s1">&#39;linear&#39;</span><span class="p">,</span><span class="n">normalized</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="linenos">2</span><span class="n">pce</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Notice how the coefficient values have changed. This is due to the
+normalization constant. While the coefficient array changed, the actual
+polynomials are just scaled versions of themselves, so the prediction
+should be exactly the same, as well as the feature importances. Let’s
+see.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="n">ypred</span> <span class="o">=</span> <span class="n">pce</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+<span class="linenos">2</span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;mse = </span><span class="si">{0:E}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">((</span><span class="n">ypred</span><span class="o">-</span><span class="n">y</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)))</span>
+</pre></div>
+</div>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="n">pce</span><span class="o">.</span><span class="n">feature_importances_</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By K. Chowdhary<br/>
+  
+      &copy; Copyright 2021, K. Chowdhary.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
